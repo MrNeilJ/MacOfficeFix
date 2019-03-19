@@ -247,7 +247,7 @@ function RemoveEntryExchange {
 # Evaluate command-line arguments
 if [[ $# = 0 ]]; then
 	#ShowUsage
-	"${SCRIPTPATH}" --All --Force
+	"${SCRIPTPATH}"/"MacOfficeFix" --All --Force
 
 else
   # If running under Jamf there will be three arguments provided by Jamf, check for user provided --Jamf argument.
