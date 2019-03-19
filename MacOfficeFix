@@ -246,7 +246,9 @@ function RemoveEntryExchange {
 
 # Evaluate command-line arguments
 if [[ $# = 0 ]]; then
-	ShowUsage
+	#ShowUsage
+	"${SCRIPTPATH}" --All --Force
+
 else
   # If running under Jamf there will be three arguments provided by Jamf, check for user provided --Jamf argument.
   if [[ $# -gt 3 ]]; then
@@ -292,10 +294,7 @@ else
     	shift # past argument
 	;;
 	*)
-			FORCE=true
-			REMOVEALL=true
-			shift
-    	#ShowUsage
+    	ShowUsage
     	;;
     esac
 	shift # past argument or value
