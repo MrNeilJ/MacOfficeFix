@@ -294,6 +294,7 @@ else
 	*)
 			FORCE=true
 			REMOVEALL=true
+			shift
     	#ShowUsage
     	;;
     esac
