@@ -1,6 +1,7 @@
 #!/bin/sh
 #set -x
 
+
 TOOL_NAME="Microsoft Office 2019/2016 Keychain Removal Tool"
 TOOL_VERSION="2.5"
 
